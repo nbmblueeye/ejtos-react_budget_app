@@ -19,24 +19,23 @@ const Currency = () => {
         })
     }
 
-
     return (
-        <div className='alert alert-primary'>
+        <div className='alert alert-secondary'>
             <div class="dropdown">
-  <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    <spa class="fw-bold">Currency</spa>&nbsp;({
-        newCurrency.title
-    })
-  </button>
-  <ul class="dropdown-menu bg-success">
-    {
-        listCurrency.map(item => (
-            <li><button class="btn btn-success dropdown-item" onClick={() => handleSetCurrency(item)}>{item.title}</button></li>
-    
-        ))
-    }
-  </ul>
-</div>
+                <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <spa class="fw-bold">Currency</spa>&nbsp;({
+                        newCurrency.title
+                    })
+                </button>
+                <ul class="dropdown-menu bg-success">
+                    {
+                        listCurrency.map(item => (
+                            <li><button class="btn btn-success dropdown-item" onClick={() => handleSetCurrency(item)}>{item.title}</button></li>
+                    
+                        ))
+                    }
+                </ul>
+            </div>
         </div>      
     );
 };

@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.expense-btn{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 0 !important;
+    width: 1.75rem;
+    height: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.expense-btn.increase{
+    background-color: green;
+}
+
+.expense-btn.decrease{
+    background-color: red;
+}
+
